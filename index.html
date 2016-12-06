@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue.resource/1.0.3/vue-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      .title {
+        text-transform: capitalize;
+      }
+      .logo {
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        overflow: hidden;
+        left: 15px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="teal">
+        <a href="#" class="brand-logo center">
+          JavaScript is a mess.</a>
+      </nav>
+      <p>List of JavaScript and web tools.</p>
+      <p>You can filter the results by name or tags.</p>
+      <p>Please check the github page for the raw data, and more informations
+         about the project.  Contributions are welcome.</p>
+      <div id="app">
+        <form>
+          <div class="input-field">
+            <input v-model="query" id="query" type="text">
+            <label for="query">Filter</label>
+          </div>
+        </form>
+        <ul class="collection">
+          <li class="collection-item avatar" v-for="item in filteredData">
+            <img :src="item.logo" alt="" class="logo">
+            <span class="title">{{item.name}}</span>
+            <p v-for="f in fields" v-if="item[f.id]">
+              <b>{{f.name}}:</b>
+              <a v-if="f.type=='url'" :href="item[f.id]">{{item[f.id]}}</a>
+              <span v-if="f.type!='url'">{{item[f.id] | join}}</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    var app = new Vue({
+      el: "#app",
+      data: {
+        query: '',
+        data: {},
+        fields: [
+          {id: 'tags', name: 'tags'},
+          {id: 'website', name: 'website', type: 'url'},
+          {id: 'oneliner', name: 'one-liner'},
+          {id: 'uses', name: 'uses'},
+          {id: 'size', name: 'size'},
+          {id: 'company', name: 'company'},
+          {id: 'licence', name: 'licence'}
+        ]
+      },
+      computed: {
+        filteredData: function() {
+          var query = this.query.toLowerCase()
+          if (!query) return this.data
+          return _.filter(this.data, function(item) {
+            var txt = (item.tags + " " + item.name + " " + item.uses).toLowerCase()
+            return txt.indexOf(query) > -1
+          })
+        }
+      },
+      filters: {
+        join: function(value) {
+          if (_.isArray(value)) return value.join(", ")
+          return value
+        }
+      },
+      mounted: function() {
+        this.$http.get("/data.json").then(function(reply) {
+          var data = reply.data
+          for (var key in data) {
+            data[key].name = key
+          }
+          this.data = reply.data
+        })
+      }
+    })
+  </script>
+</html>
