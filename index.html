@@ -89,7 +89,7 @@
         }
       },
       mounted: function() {
-        this.$http.get("/data.json").then(function(reply) {
+        this.$http.get("data.json").then(function(reply) {
           var data = reply.data
           for (var key in data) {
             data[key].name = key
