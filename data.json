@@ -45,8 +45,7 @@
         "tags": ["bundler", "tool"],
         "webiste": "http://browserify.org/",
         "uses": "nodejs",
-        "licence": "MIT",
-        "logo": "http://browserify.org/images/wizard_hat_blue.png"
+        "licence": "MIT"
     },
 
     "closure compiler": {
