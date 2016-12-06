@@ -1,0 +1,226 @@
+
+{
+    "angular": {
+        "tags": ["framework", "frontend", "SPA"],
+        "licence": "MIT",
+        "size": "144 KB",
+        "company": "google",
+        "website": "https://angularjs.org/",
+        "oneliner": "HTML enhanced for web apps!",
+        "logo": "https://camo.githubusercontent.com/34bc754b709a5669f61e822514f8d8195e452271/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f616e67756c61722e737667"
+    },
+
+    "babel": {
+        "tags": ["language", "compiler", "tool"],
+        "website": "https://babeljs.io/",
+        "oneliner": "Use next generation JavaScript, today."
+    },
+
+    "backbone": {
+        "tags": "library",
+        "licence": "MIT",
+        "size": "7.5 KB",
+        "website": "http://backbonejs.org/",
+        "logo": "https://camo.githubusercontent.com/4710829338ccdcf5ccbaa32e7f8219eb65db9034/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f6261636b626f6e652e737667"
+    },
+
+    "bootstrap": {
+        "tags": ["css", "frontend", "widgets"],
+        "uses": ["sass", "less", "jquery"],
+        "company": "twitter",
+        "website": "http://getbootstrap.com/",
+        "oneliner": "Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.",
+        "logo": "https://camo.githubusercontent.com/2072fdacd7dc442b3c28b9816fc7635a10bfef78/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f626f6f7473747261702e737667"
+    },
+
+    "bower": {
+        "tags": ["package manager", "tool"],
+        "uses": "nodejs",
+        "website": "https://bower.io/",
+        "oneliner": "A package manager for the web",
+        "logo": "https://camo.githubusercontent.com/7580c2d0fe05bea6f3bcb258ebb3b7bbeade7fad/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f626f7765722e737667"
+    },
+
+    "browserify": {
+        "tags": ["bundler", "tool"],
+        "webiste": "http://browserify.org/",
+        "uses": "nodejs",
+        "licence": "MIT",
+        "logo": "http://browserify.org/images/wizard_hat_blue.png"
+    },
+
+    "closure compiler": {
+        "tags": ["compiler", "tool"],
+        "company": "google",
+        "website": "https://developers.google.com/closure/compiler/"
+    },
+
+    "ember": {
+        "tags": ["framework", "frontend", "SPA"],
+        "uses": ["jquery", "handlebars"],
+        "licence": "MIT",
+        "website": "http://emberjs.com/",
+        "oneliner": "A framework for creating ambitious web applications.",
+        "logo": "https://camo.githubusercontent.com/751f30c24715d83780b228f34cb5404297eb5bc5/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f656d6265722e737667"
+    },
+
+    "gulp": {
+        "tags": ["task runner", "tool"],
+        "uses": "nodejs",
+        "company": "Fractal Innovations",
+        "licence": "MIT",
+        "website": "http://gulpjs.com/",
+        "oneliner": "Automate and enhance your workflow"
+    },
+
+    "grunt": {
+        "tags": ["task runner", "tool"],
+        "uses": "nodejs",
+        "licence": "MIT",
+        "website": "http://gruntjs.com/",
+        "oneliner": "The JavaScript Task Runner",
+        "logo": "https://camo.githubusercontent.com/6234a7f981b073077aae40ba4a4e25c950400cdd/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f6772756e742e737667"
+    },
+
+    "handlebars": {
+        "tags": "template",
+        "website": "http://handlebarsjs.com/",
+        "oneliner": "Minimal Templating on Steroids",
+        "logo": "https://camo.githubusercontent.com/5bfdd82aee81e5bbf485723df62d4753f18ecea7/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f68616e646c65626172732e737667"
+    },
+
+    "jquery": {
+        "tags": ["library", "frontend"],
+        "size": "86.3 KB",
+        "licence": "MIT",
+        "website": "https://jquery.com/",
+        "oneliner": "write less, do more",
+        "logo": "https://camo.githubusercontent.com/45903f6b597aa71b29ac337c4007aefbe35c583e/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f6a71756572792e737667"
+    },
+
+    "jquery ui": {
+        "tags": ["library", "frontend", "widgets"],
+        "licence": "MIT",
+        "uses": "jquery",
+        "webiste": "http://jqueryui.com/"
+    },
+
+    "jsx": {
+        "tags": "language",
+        "website": "https://facebook.github.io/react/docs/jsx-in-depth.html"
+    },
+
+    "less": {
+        "tags": ["language", "css"],
+        "website": "http://lesscss.org/",
+        "logo": "https://camo.githubusercontent.com/8aa1a97627de9227e33d9ad66a963c1d7ad22d98/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f6c6573732e737667"
+    },
+
+    "materializecss": {
+        "tags": ["css", "frontend", "widgets"],
+        "uses": ["jquery", "sass"],
+        "licence": "MIT",
+        "website": "http://materializecss.com/",
+        "oneliner": "A modern responsive front-end framework based on Material Design",
+        "logo": "https://camo.githubusercontent.com/a6ee039214392d86e038c5d601f55ec60310d03c/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f6d6174657269616c697a652e737667"
+    },
+
+    "meteor": {
+        "tags": ["framework", "frontend", "backend"],
+        "licence": "MIT",
+        "uses": "jquery",
+        "website": "https://www.meteor.com/"
+    },
+
+    "modernizr": {
+      "tags": "library",
+      "licence": "MIT",
+      "website": "https://modernizr.com/",
+      "oneliner": "Respond to your user’s browser features"
+    },
+
+    "mustache": {
+        "tags": "template",
+        "website": "https://mustache.github.io/",
+        "licence": "MIT"
+    },
+
+    "nodejs": {
+        "tags": "runtime",
+        "website": "https://nodejs.org",
+        "logo": "https://camo.githubusercontent.com/139495cecc221ce6a895c8c7aa91a3f4978c69bd/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f6e6f64656a732e737667"
+    },
+
+    "npm": {
+        "tags": "package manager",
+        "uses": "nodejs",
+        "licence": "Artistic License 2.0",
+        "website": "http://npmjs.com/",
+        "oneliner": "Build amazing things",
+        "logo": "https://camo.githubusercontent.com/3e515626cda99fa581c4ec00bc9bae5b50c31ca6/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f6e706d2e737667"
+    },
+
+    "polymer": {
+        "tags": ["library", "components"],
+        "company": "google",
+        "website": "https://www.polymer-project.org",
+        "logo": "https://camo.githubusercontent.com/b1c329c05886ab8b79c24e2394c25719bfa03f2c/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f706f6c796d65722e737667"
+    },
+
+    "stylus": {
+        "tags": ["language", "css"],
+        "website": "http://stylus-lang.com/",
+        "oneliner": "Expressive, dynamic, robust CSS",
+        "logo": "https://camo.githubusercontent.com/211e79dabd7042a48f06c26464ab037ba0b4d583/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f7374796c75732e737667"
+    },
+
+    "react": {
+        "tags": ["library", "frontend"],
+        "size": "128 KiB",
+        "company": "facebook",
+        "uses": "jsx",
+        "licence": "3-Clause BSD",
+        "website": "http://facebook.github.io/react",
+        "oneliner": "A JavaScript library for building user interfaces",
+        "logo": "https://camo.githubusercontent.com/412702e140960f77c6c2c9c1cfea114a94ed7f75/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f72656163742e737667"
+    },
+
+    "sass": {
+        "tags": ["language", "css"],
+        "oneliner": "CSS with superpowers",
+        "website": "http://sass-lang.com/",
+        "logo": "https://camo.githubusercontent.com/4280bad38f992b780cd172508c3103dfa2312b20/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f736173732e737667"
+    },
+
+    "underscore": {
+        "tags": ["library"],
+        "size": "5.7 KB",
+        "licence": "MIT",
+        "website": "http://underscorejs.org/"
+    },
+
+    "vuejs": {
+        "tags": ["frontend", "library", "SPA"],
+        "uses": "jquery",
+        "licence": "MIT",
+        "size": "17 KB",
+        "website": "https://vuejs.org/",
+        "oneliner": "The Progressive JavaScript Framework",
+        "uses": "mustache"
+    },
+
+    "yeoman": {
+      "tags": ["framework", "tool"],
+      "uses": "Modernizr",
+      "licence": "BSD",
+      "oneliner": "The web's scaffolding tool for modern webapps",
+      "logo": "https://camo.githubusercontent.com/f4ef0cbec5bfadcfc85b212c12c9c1123081d39a/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f79656f6d616e2e737667"
+    },
+
+    "webpack": {
+        "tags": ["bundler", "task runner", "tool"],
+        "licence": "MIT",
+        "website": "https://webpack.github.io/",
+        "logo": "https://camo.githubusercontent.com/888048baa057f2073e2c2e8644158d0a23f97114/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f7765627061636b2e737667"
+    }
+}
